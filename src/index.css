@@ -1,0 +1,26 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+header .filters{
+    display: flex;
+    gap: 10px;
+}
+
+.filters > div {
+    display: flex;
+    gap: 20px;
+}
