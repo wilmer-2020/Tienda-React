@@ -5,6 +5,7 @@ box-sizing: border-box;
 }
 body {
     background-color: rgb(233, 233, 233);
+    overflow: hidden;
 }
 
 header{
@@ -23,4 +24,23 @@ header .filters{
 .filters > div {
     display: flex;
     gap: 20px;
+}
+
+header label ~ .btnCart{
+    transform: translateX(-180px)
+}
+
+.cart-content{
+    width: 400px;
+    height: 153%;
+    padding: 10px;
+    background-color: brown;
+    z-index: 1000;
+    position: absolute;
+   transform: translateX(500%);
+    transition: .5s ease;
+}
+
+.cart-content-active{
+    transform: translateX(242%);
 }
